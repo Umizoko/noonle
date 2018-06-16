@@ -1,0 +1,152 @@
+@charset "utf-8";
+@font-face {
+    font-family: 'use-blow';
+    src: url('../fonts/blow.ttf')format('truetype');
+}
+
+body {
+    font-family: "use-blow";
+    font-size: 24px;
+    background-image: url("../image/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    margin: 0 auto;
+}
+
+header ul {
+    float: right;
+    padding: 0;
+    margin: 10px;
+    margin-right: 0;
+}
+
+header ul li {
+    display: inline;
+    list-style: none;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #ddd;
+}
+
+header ul li a:hover {
+    color: #fff;
+}
+
+#wrapper {
+    width: 100%;
+    clear: both;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+#wrapper h1 {
+    margin: 70px 0 0 0;
+    text-align: center;
+    font-size: 100px;
+    color: #eee;
+}
+
+#search {
+    width: 300px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+#search ul {
+	width: 500px;
+	padding: 0;
+}
+
+#search ul li {
+    display: inline-block;
+    height: 24px;
+}
+
+#search ul li i {
+    font-size: smaller;
+    vertical-align: bottom;
+    position: relative;
+    right: 30px;
+    top: -4px;
+}
+
+#search ul li i:hover {
+    color: #333;
+}
+
+#search #keyword {
+	height: 28px;
+	width: 23em;
+    vertical-align: bottom;
+    box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+    border: 1px solid #fff;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+#country p {
+    font-size: 16px;
+    margin: 5px auto;
+    color: #ddd;
+}
+
+#footer_nav ul {
+    padding: 0;
+    margin: 5px auto;
+}
+
+#footer_nav ul li{
+    display: inline;
+    list-style: none;
+}
+
+#footer_nav ul li a {
+    font-size: 16px;
+    text-decoration: none;
+    color: #ddd;
+}
+
+#footer_nav ul li a:hover {
+    color: #fff;
+}
+
+@media screen and (max-width: 767px){
+    body {
+        font-family: "use-blow";
+        font-size: 24px;
+        background-image: url("../image/backgroundMobile.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+
+    header,
+    #wrapper {
+        width: 100%;
+    }
+
+    #search #keyword {
+        width: 23em;
+        vertical-align: bottom;
+        box-shadow: 0 5px 5px rgba(0,0,0,0.4);
+        border: 1px solid #fff;
+        margin-top: 10px;
+    }
+
+    footer {
+        display: none;
+    }
+}
